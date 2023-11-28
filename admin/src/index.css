@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/** ========== Base ========== */
+
+/** ========== Utilities ========== */
+
+/** ========== Layout ========== */
+
+/** ========== Pages ========== */
+/** Auth */
+.auth {
+    @apply w-full h-screen overflow-hidden flex justify-center items-center px-2;
+}
+
+.auth-container {
+    @apply w-full max-w-md;
+}
+
+.auth-form {
+    @apply w-full bg-white p-6 shadow-xl ring-1 ring-gray-900/5 rounded-xl;
+}
+
+.auth-header {
+    @apply text-center;
+}
+
+.auth-title {
+    @apply text-3xl font-semibold text-gray-900;
+}
+
+.auth-subtitle {
+    @apply text-gray-500;
+}
