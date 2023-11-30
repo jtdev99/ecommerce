@@ -5,13 +5,16 @@
 /** ========== Base ========== */
 
 /** ========== Utilities ========== */
+.flex-center {
+    @apply flex justify-center items-center;
+}
 
 /** ========== Layout ========== */
 
 /** ========== Pages ========== */
 /** Auth */
 .auth {
-    @apply w-full h-screen overflow-hidden flex justify-center items-center px-2;
+    @apply w-full h-screen overflow-hidden flex justify-center items-center px-2 dark:bg-gray-800 dark:text-white;
 }
 
 .auth-container {
@@ -19,7 +22,7 @@
 }
 
 .auth-form {
-    @apply w-full bg-white p-6 shadow-xl ring-1 ring-gray-900/5 rounded-xl;
+    @apply w-full p-6 rounded-xl;
 }
 
 .auth-header {
@@ -27,9 +30,13 @@
 }
 
 .auth-title {
-    @apply text-3xl font-semibold text-gray-900;
+    @apply text-3xl font-semibold text-gray-900 dark:text-white;
 }
 
 .auth-subtitle {
     @apply text-gray-500;
+}
+
+.auth-controls {
+    @apply grid gap-4;
 }
